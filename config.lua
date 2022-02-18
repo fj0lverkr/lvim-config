@@ -5,7 +5,7 @@
 -- lvim options
 lvim.log.level = "warn"
 lvim.format_on_save = false -- TODO find out why the auto-formatter add ^M for newlines in lua files (but not in e.g. Python)
-lvim.colorscheme = "tokyonight"
+lvim.colorscheme = "molokai"
 
 -- vim options
 --vim.opt.number = false -- unset numbered lines
@@ -52,6 +52,7 @@ lvim.builtin.treesitter.highlight.enabled = true
 lvim.plugins = {
     { "folke/tokyonight.nvim" },
     { "tiagovla/tokyodark.nvim" },
+    { "tomasr/molokai" },
     { "RRethy/vim-illuminate" },
     { "andweeb/presence.nvim" }
 }
