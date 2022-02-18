@@ -4,7 +4,7 @@
 
 -- lvim options
 lvim.log.level = "warn"
-lvim.format_on_save = true
+lvim.format_on_save = false -- TODO find out why the auto-formatter add ^M for newlines in lua files (but not in e.g. Python)
 lvim.colorscheme = "tokyonight"
 
 -- vim options
