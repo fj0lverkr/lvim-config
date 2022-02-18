@@ -8,8 +8,13 @@ lvim.format_on_save = false -- TODO find out why the auto-formatter add ^M for n
 lvim.colorscheme = "tokyonight"
 
 -- vim options
-vim.opt.number = false -- set numbered lines
-vim.opt.relativenumber = true -- set relative numbered lines
+--vim.opt.number = false -- unset numbered lines
+--vim.opt.relativenumber = true -- set relative numbered lines
+vim.opt.expandtab = true            -- Use spaces instead of tabs
+vim.opt.shiftwidth = 2              -- Shift 4 spaces when tab
+vim.opt.tabstop = 4                 -- 1 tab == 4 spaces
+vim.opt.smartindent = true
+vim.opt.wrap = true
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
@@ -47,9 +52,6 @@ lvim.builtin.treesitter.highlight.enabled = true
 lvim.plugins = {
     { "folke/tokyonight.nvim" },
     { "tiagovla/tokyodark.nvim" },
-    { "feline-nvim/feline.nvim" },
     { "RRethy/vim-illuminate" },
     { "andweeb/presence.nvim" }
 }
-
-require('feline').setup()
