@@ -11,10 +11,13 @@ lvim.colorscheme = "molokai"
 --vim.opt.number = false -- unset numbered lines
 --vim.opt.relativenumber = true -- set relative numbered lines
 vim.opt.expandtab = true            -- Use spaces instead of tabs
-vim.opt.shiftwidth = 2              -- Shift 4 spaces when tab
+vim.opt.shiftwidth = 4              -- Shift 4 spaces when tab
 vim.opt.tabstop = 4                 -- 1 tab == 4 spaces
 vim.opt.smartindent = true
 vim.opt.wrap = true
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.guifont = "Izayoi Monospaced:h12" -- the font used in graphical neovim applications
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
